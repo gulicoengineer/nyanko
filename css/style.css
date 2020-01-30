@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+/*========= base ===========*/
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+
+.header-nav {
+  display: flex;
+  height: 100%;
+}
+
+.header-nav h1 {
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium';
+  margin-left: 5%;
+}
+
+.header-nav nav {
+  width: 60%;
+  height: 100%;
+  margin-right: auto;
+}
+
+.header-nav nav ul {
+  text-align: center;
+  line-height: 70px;
+}
+
+.header-nav nav ul li {
+  margin: 0 3%;
+  display: inline;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.mainvisual {
+  height: 700px;
+  position: relative;
+}
+
+.bg1 {
+  height: 100%;
+  width: 60%;
+  background:-webkit-linear-gradient(left, #f0e68f, #fff) ;
+  position: absolute;
+  top: -70px;
+  z-index: -1;
+}
+
+.mainvisual h2 {
+  background-color: rgb(255, 255, 255, 0.6);
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 3rem;
+  padding: 1rem;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.cat-img1 {
+  height: 550px;
+  width: 70%;
+  margin-left: 30%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.greeting {
+  padding: 0 10%;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.content-greeting {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-wrapper img {
+  height: 400px;
+  width: 50%;
+  object-fit: cover;
+}
+
+.introduction {
+  padding-left: 50px;
+  width: 48%;
+}
+
+.introduction h3{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.work{
+  width: 100%;
+  position: relative;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.work::before{
+  content: '';
+  background:-webkit-linear-gradient(top,#f0e68f,#fff);
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  position:absolute;
+}
+
+.work-content{
+  width: 100%;
+}
+
+.work-content h2,
+.content-wrapper h2{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+
+.active-contents {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.active-content {
+  width: 30%;
+}
+
+.active-content img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.news{
+  width: 100%;
+  background:-webkit-linear-gradient(top,#f0e68f,#fff);
+  font-family: 'Franklin Gothic Medium';
+  margin-bottom: 300px;
+}
+
+.news .content-wrapper{
+  margin: 0 auto;
+  width: 75%;
+}
+
+.news ul{
+  background-color: #fff;
+  padding: 0 5%;
+
+}
+
+.news li{
+  border-bottom: 1px solid #dcdcdc;
+  padding: 2% 0;
+}
+
+.news ul li a{
+  color: #333333;
+}
+
+.news ul time{
+  color: #949494;
+  padding-right: 0;
+  margin-right: 5%;
+}
+
+.recruit{
+  position: relative;
+}
+
+.recruit-img::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #f0e68f;
+  z-index: -1;
+  right: 0;
+  top: -60px;
+}
+
+
+.recruit-img img{
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+margin-right: 20%;
+}
+
+.recruit-img::after{
+  content: ' ';
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.recruit a{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1% 7%;
+  font-family: 'Franklin Gothic Medium';
+  position: absolute;
+  top: 40%;
+  right: 45%;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+footer{
+  position: relative;
+  font-family: 'Franklin Gothic Medium';
+}
+
+footer .content-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  line-height: 10px;
+  padding-top: 100px;
+}
+
+footer .content-wrapper h3{
+  font-size: 1.5em;
+}
+
+.footer-content{
+  display:flex;
+}
+
+address{
+  width: 70%;
+}
+
+.footer-nav{
+  width: 100%;
+  padding-top: 30px;
+  margin-right: 3%;
+}
+
+.footer-nav ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+.copyright p{
+  background-color: #f0e68f;
+  height: 80px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 80px;
+}
+
+.copyright::before{
+  content:' ';
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-image: url('../img/nikukyuu2.png');
+  padding-bottom: 10px;
+}
